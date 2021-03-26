@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<widgets xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Widget:etc/widget.xsd">
+	<widget id="gog_advertisement" class="Gog\Advertisement\Block\Widget\Ads">
+		<label translate="true">Gog Advertisement</label>
+		<description translate="true">Advertisement</description>
+		<parameters>
+			<parameter name="name" xsi:type="text" visible="true">
+				<label translate="true">Advertisement Name</label>
+				<description translate="true"><![CDATA[Input the widget name. Empty for hide]]></description>
+			</parameter>
+
+			
+
+			<parameter name="block_1" xsi:type="select" visible="true" source_model="Gog\Advertisement\Model\Config\Source\Staticblock">
+				<label translate="true">Select CMS Static block </label>
+			</parameter>
+			<parameter name="block_2" xsi:type="select" visible="true" source_model="Gog\Advertisement\Model\Config\Source\pattern">
+				<label translate="true">Select pattern</label>
+			</parameter>
+			<parameter name="html_1" xsi:type="conditions" visible="true" class="Gog\Advertisement\Block\Adminhtml\Widget\Form\Field\WysiwygEditor">
+				<label translate="true">Content 1</label>
+			</parameter>
+			
+
+		</parameters>
+	</widget>
+</widgets>

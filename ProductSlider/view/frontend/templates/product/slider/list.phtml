@@ -1,0 +1,55 @@
+<?php
+$productCollection = $block->getLoadedProductCollection();
+$_helper = $this->helper('Magento\Catalog\Helper\Output');
+?>
+<div class="block block-product-slider slider-list">
+    <div class="block-title">
+        <h2><?php echo $block->getTitle() ?></h2>
+    </div>
+    <div class="block-content">
+        <?php if (count($productCollection)): ?>
+            <div class="owl-carousel owl-product-slider">
+                <?php foreach ($productCollection as $product): ?>
+                    <div class="owl">
+                        <div class="product-image">
+                            <a href="<?php echo $product->getProductUrl() ?>">
+                                <?php echo $block->getImage($product,
+                                    'category_page_grid')->toHtml() ?>
+                            </a>
+                        </div>
+
+                        <div class="style-text">
+                        <strong class="product-name">
+                            <a
+                                    href="<?php echo $product->getProductUrl() ?>">
+                                <?php echo $_helper->productAttribute($product,
+                                    $product->getName(), 'name'); ?>
+                            </a>
+                        </strong>
+                        </div>
+                        <?php echo $block->getProductPrice($product) ?>
+                    </div>
+                <?php endforeach; ?>
+            </div>
+        <?php endif; ?>
+    </div>
+</div>
+
+
+<script type="text/javascript" xml="space">// <![CDATA[
+    require(['jquery', 'owlcarousel'], function() {
+        jQuery(document).ready(function() {
+            jQuery('.owl-product-slider').owlCarousel({
+
+                margin:10,
+                loop:true,
+                items:5,
+                dots:true,
+                navText : ["<div class='product-arrow'><i class='fa fa-chevron-left'></i></div>","<div class='product-arrow'><i class='fa fa-chevron-right'></i></div>"]
+
+            });
+            jQuery('.owl-product-slider div').show();
+        });
+    });
+
+    // ]]></script>

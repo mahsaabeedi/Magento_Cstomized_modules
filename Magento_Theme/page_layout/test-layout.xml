@@ -1,0 +1,24 @@
+<?xml version="1.0" ?>
+<layout xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:View/Layout/etc/page_layout.xsd">
+    <update handle="empty"/>
+    <referenceContainer name="footer">
+
+        <!--<block class="Magento\CatalogWidget\Block\Product\ProductsList" name="demoBlock" >-->
+            <!--<arguments>-->
+                <!--<argument name="show_pager" xsi:type="string">0</argument>-->
+                <!--<argument name="products_per_page" xsi:type="string">5</argument>-->
+                <!--<argument name="products_count" xsi:type="string">10</argument>-->
+                <!--<argument name="template" xsi:type="string">product/widget/content/grid.phtml</argument>-->
+                <!--<argument name="conditions_encoded" xsi:type="string">^[`1`:^[`type`:`Magento||CatalogWidget||Model||Rule||Condition||Combine`,`aggregator`:`all`,`value`:`1`,`new_child`:``^]^]</argument>-->
+            <!--</arguments>-->
+        <!--</block>-->
+
+        <block class="Magento\Cms\Block\Block" name="home-sliderrrr">
+            <arguments>
+                <argument name="block_id" xsi:type="string">home-sliderrrr</argument>
+            </arguments>
+        </block>
+
+
+    </referenceContainer>
+</layout>

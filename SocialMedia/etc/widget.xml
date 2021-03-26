@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<widgets xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Widget:etc/widget.xsd">
+    <widget id="gog_socialmedia" class="Gog\SocialMedia\Block\Widget\Socialmedia">
+        <label translate="true">Gog Social Media</label>
+        <description translate="true">Generate Social Media</description>
+        <parameters>
+
+            <parameter name="telegram_text" xsi:type="text" visible="true">
+                <label translate="true">telegram</label>
+                <description translate="true"><![CDATA[Input the widget title. Empty for hide]]></description>
+            </parameter>
+
+            <parameter name="block_1" xsi:type="select" visible="true" source_model="Gog\SocialMedia\Model\Config\Source\Staticblock">
+                <label translate="true">Show Telegram</label>
+            </parameter>
+
+            <parameter name="instagram_text" xsi:type="text" visible="true">
+                <label translate="true">Instagram</label>
+                <description translate="true"><![CDATA[Input the widget title. Empty for hide]]></description>
+            </parameter>
+            <parameter name="block_2" xsi:type="select" visible="true" source_model="Gog\SocialMedia\Model\Config\Source\Staticblock">
+                <label translate="true">Show Instagram</label>
+            </parameter>
+
+            <parameter name="twitter_text" xsi:type="text" visible="true">
+                <label translate="true">twitter</label>
+            </parameter>
+
+            <parameter name="block_3" xsi:type="select" visible="true" source_model="Gog\SocialMedia\Model\Config\Source\Staticblock">
+                <label translate="true">Select Disable/Enable twitter</label>
+            </parameter>
+
+        </parameters>
+    </widget>
+</widgets>

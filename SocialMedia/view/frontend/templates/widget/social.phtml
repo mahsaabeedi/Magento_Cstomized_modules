@@ -1,0 +1,49 @@
+<?php
+$telegramtext          = $this->getConfig('telegram_text');
+$instagramtext         = $this->getConfig('instagram_text');
+$twittertext           = $this->getConfig('twitter_text');
+$block_1               = $this->getConfig('block_1');
+$block_2               = $this->getConfig('block_2');
+$block_3               = $this->getConfig('block_3');
+
+?>
+<html xmlns="http://www.w3.org/1999/html">
+
+<!--telegramlink-->
+<!--                image in pub folder--><?php //echo $block->getUrl("pub/media/myfolder/") ?><!--facebook.png-->
+
+<!--            --><?php //echo $this->getViewFileUrl("Gog_SocialMedia::images");?>
+            <ul class="social-media-list">
+                <?php if(strcmp($block_1 ,"Yes")==0)
+                     	{ ?>
+                   <?php if($telegramtext){ ?>
+                   <li><a href="<?php echo $telegramtext;?>" ><img src= <?php echo $block->getViewFileUrl("Gog_SocialMedia::images")."/telegram.png";?> class="img" /></a></li>
+                           <?php } ?>
+                        <?php } ?>
+
+<!--                --><?php //echo $block->getUrl("pub/media/myfolder/") ?><!--instagram.png-->
+
+                <?php if(strcmp($block_2 ,"Yes")==0)
+                { ?>
+                   <?php if($instagramtext){ ?>
+                    <li><a href="<?php echo $instagramtext;?>" ><img src= <?php echo $block->getViewFileUrl("Gog_SocialMedia::images")."/instagram.png";?> class="img" /></a></li>
+
+                    <!--                 <li><a href="--><?php //echo $instagramtext;?><!--" ><img src="https://unpkg.com/simple-icons@1.2.14/icons/instagram.svg"  class="img"/></a></li>-->
+                           <?php } ?>
+                <?php } ?>
+
+<!--twitterlink-->
+<!--                 image in pub folder --><?php //echo $block->getUrl("pub/media/myfolder/") ?><!--twitter.png-->
+
+                <?php if(strcmp($block_3 ,"Yes")==0)
+                { ?>
+                           <?php if($twittertext){ ?>
+                    <li><a href="<?php echo $twittertext;?>" ><img src= <?php echo $block->getViewFileUrl("Gog_SocialMedia::images")."/twitter.png";?> class="img" /></a></li>
+
+                    <!--                 <li><a href="--><?php //echo $twittertext;?><!--" ><img src="https://unpkg.com/simple-icons@latest/icons/twitter.svg" class="img" /></a></li>-->
+               <?php } ?>
+                <?php } ?>
+
+<!--                -->
+                    </ul>
+</html>

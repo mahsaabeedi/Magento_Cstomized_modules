@@ -1,0 +1,25 @@
+<?php
+$dataHelper          = $this->helper('Gog\ImageGrid\Helper\Data');
+$gridElements        = $block->getGridElements();
+$blockId             = rand().time();
+$title               = $this->getConfig('title');
+$gridLayout          = $this->getConfig('gird_layout');
+
+?>
+<div class="imagegrid">
+    <div class="rowImageGrid">
+       <?php if(strcmp($gridLayout,"layout1")==0)
+        	{ ?>
+<!--        	<div class="block-title">-->
+<!--        		<strong>--><?php //echo 'layout1 is selected' ?><!--</strong>-->
+<!--            </div>-->
+                        <?php for ($x=0;$x<count($gridElements);$x+=2)
+                        { ?>
+                            <div class="columnImageGrid">
+                                <?php echo $gridElements[$x];?>
+                                <?php echo $gridElements[$x+1];?>
+                            </div>
+                        <?php } ?>
+                <?php } ?>
+    </div>
+</div>

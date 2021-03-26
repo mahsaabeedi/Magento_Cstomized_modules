@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<widgets xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Widget:etc/widget.xsd">
+	<widget id="gog_imagegrid" class="Gog\ImageGrid\Block\Widget\Grids">
+		<label translate="true">Gog Image Grid</label>
+		<description translate="true">Generate Image Slider</description>
+		<parameters>
+			<parameter name="title" xsi:type="text" visible="true">
+				<label translate="true">Title</label>
+				<description translate="true"><![CDATA[Input the widget title. Empty for hide]]></description>
+			</parameter>
+
+			<parameter name="gird_layout" xsi:type="select" visible="true" source_model="Gog\ImageGrid\Model\Config\Source\GridsLayout">
+				<label translate="true">Grid Layout</label>
+			</parameter>
+
+
+			<parameter name="grid_element1" xsi:type="block" visible="true" required="false" sort_order="20" >
+
+				<depends>
+					<parameter name="gird_layout" value="layout1" />
+				</depends>
+				<!--<label translate="true">gird1</label>-->
+				<!--<description>thisdepends</description>-->
+				<!--<label>asdf</label>-->
+				<block class="Gog\ImageGrid\Block\Adminhtml\Widget\Form\Field\WysiwygEditor"/>
+			</parameter>
+			<parameter name="grid_element2" xsi:type="block" visible="true" required="false" sort_order="20" >
+				<depends>
+					<parameter name="gird_layout" value="layout1" />
+				</depends>
+				<!--<label translate="true">gird1</label>-->
+				<!--<description>fasdjf</description>-->
+				<!--<label>asdf</label>-->
+				<block class="Gog\ImageGrid\Block\Adminhtml\Widget\Form\Field\WysiwygEditor"/>
+			</parameter>
+			<parameter name="grid_element3" xsi:type="block" visible="true" required="false" sort_order="20" >
+				<depends>
+					<parameter name="gird_layout" value="layout1" />
+				</depends>
+				<!--<label translate="true">gird1</label>-->
+				<!--<description>fasdjf</description>-->
+				<!--<label>asdf</label>-->
+				<block class="Gog\ImageGrid\Block\Adminhtml\Widget\Form\Field\WysiwygEditor"/>
+			</parameter>
+			<parameter name="grid_element4" xsi:type="block" visible="true" required="false" sort_order="20" >
+				<depends>
+					<parameter name="gird_layout" value="layout1" />
+				</depends>
+				<!--<label translate="true">gird1</label>-->
+				<!--<description>fasdjf</description>-->
+				<!--<label>asdf</label>-->
+				<block class="Gog\ImageGrid\Block\Adminhtml\Widget\Form\Field\WysiwygEditor"/>
+			</parameter>
+			<parameter name="grid_element5" xsi:type="block" visible="true" required="false" sort_order="20" >
+				<depends>
+					<parameter name="gird_layout" value="layout1" />
+				</depends>
+				<!--<label translate="true">gird1</label>-->
+				<!--<description>fasdjf</description>-->
+				<!--<label>asdf</label>-->
+
+				<block class="Gog\ImageGrid\Block\Adminhtml\Widget\Form\Field\WysiwygEditor"/>
+
+			</parameter>
+			<parameter name="grid_element6" xsi:type="block" visible="true" required="false" sort_order="20" >
+				<depends>
+					<parameter name="gird_layout" value="layout1" />
+				</depends>
+				<!--<label translate="true">gird1</label>-->
+				<!--<description>fasdjf</description>-->
+				<!--<label>asdf</label>-->
+				<block class="Gog\ImageGrid\Block\Adminhtml\Widget\Form\Field\WysiwygEditor"/>
+			</parameter>
+			<parameter name="grid_element7" xsi:type="block" visible="true" required="false" sort_order="20" >
+				<depends>
+					<parameter name="gird_layout" value="layout1" />
+				</depends>
+				<!--<label translate="true">gird1</label>-->
+				<!--<description>fasdjf</description>-->
+				<!--<label>asdf</label>-->
+				<block class="Gog\ImageGrid\Block\Adminhtml\Widget\Form\Field\WysiwygEditor"/>
+			</parameter>
+			<parameter name="grid_element8" xsi:type="block" visible="true" required="false" sort_order="20" >
+				<depends>
+					<parameter name="gird_layout" value="layout1" />
+				</depends>
+				<!--<label translate="true">gird1</label>-->
+				<!--<description>fasdjf</description>-->
+				<!--<label>asdf</label>-->
+				<block class="Gog\ImageGrid\Block\Adminhtml\Widget\Form\Field\WysiwygEditor"/>
+			</parameter>
+		</parameters>
+	</widget>
+</widgets>

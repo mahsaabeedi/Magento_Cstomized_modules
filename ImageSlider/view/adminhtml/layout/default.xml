@@ -1,0 +1,12 @@
+<?xml version="1.0"?>
+
+<page xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../../../../../../lib/internal/Magento/Framework/View/Layout/etc/page_configuration.xsd">
+	<head>
+		<css src="Gog_ImageSlider::css/styles.css" />
+	</head>
+	<body>
+		<referenceContainer name="js">
+			<block class="Magento\Framework\View\Element\Template" template="Gog_ImageSlider::wysiwyg/js.phtml" name="imageslider.wysiwyg.js"/>
+		</referenceContainer>
+	</body>
+</page>

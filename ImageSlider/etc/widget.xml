@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<widgets xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Widget:etc/widget.xsd">
+	<widget id="gog_imageslider" class="Gog\ImageSlider\Block\Widget\Sliders">
+		<label translate="true">Gog Image Slider</label>
+		<description translate="true">Generate Image Slider</description>
+		<parameters>
+
+			<parameter name="title" xsi:type="text" visible="true">
+				<label translate="true">Title</label>
+				<description translate="true"><![CDATA[Input the widget title. Empty for hide]]></description>
+			</parameter>
+
+			<parameter name="slidemanage_heading" xsi:type="conditions" visible="true" class="Gog\ImageSlider\Block\Adminhtml\System\Config\Form\Field\Heading">
+				<label translate="true">Slide Manage</label>
+			</parameter>
+
+			<parameter name="block_1" xsi:type="select" visible="true" source_model="Gog\ImageSlider\Model\Config\Source\Staticblock">
+				<label translate="true">Select CMS Static block 1</label>
+			</parameter>
+
+			<parameter name="html_1" xsi:type="conditions" visible="true" class="Gog\ImageSlider\Block\Adminhtml\Widget\Form\Field\WysiwygEditor">
+				<label translate="true">Content 1</label>
+			</parameter>
+
+			<parameter name="block_2" xsi:type="select" visible="true" source_model="Gog\ImageSlider\Model\Config\Source\Staticblock">
+				<label translate="true">Select CMS Static block 2</label>
+			</parameter>
+
+			<parameter name="html_2" xsi:type="conditions" visible="true" class="Gog\ImageSlider\Block\Adminhtml\Widget\Form\Field\WysiwygEditor">
+				<label translate="true">Content 2</label>
+			</parameter>
+			<parameter name="block_3" xsi:type="select" visible="true" source_model="Gog\ImageSlider\Model\Config\Source\Staticblock">
+				<label translate="true">Select CMS Static block 3</label>
+			</parameter>
+			<parameter name="html_3" xsi:type="conditions" visible="true" class="Gog\ImageSlider\Block\Adminhtml\Widget\Form\Field\WysiwygEditor">
+				<label translate="true">Content 3</label>
+			</parameter>
+			<parameter name="block_4" xsi:type="select" visible="true" source_model="Gog\ImageSlider\Model\Config\Source\Staticblock">
+				<label translate="true">Select CMS Static block 4</label>
+			</parameter>
+			<parameter name="html_4" xsi:type="conditions" visible="true" class="Gog\ImageSlider\Block\Adminhtml\Widget\Form\Field\WysiwygEditor">
+				<label translate="true">Content 4</label>
+			</parameter>
+			<parameter name="block_5" xsi:type="select" visible="true" source_model="Gog\ImageSlider\Model\Config\Source\Staticblock">
+				<label translate="true">Select CMS Static block 5</label>
+			</parameter>
+			<parameter name="html_5" xsi:type="conditions" visible="true" class="Gog\ImageSlider\Block\Adminhtml\Widget\Form\Field\WysiwygEditor">
+				<label translate="true">Content 5</label>
+			</parameter>
+			<parameter name="block_6" xsi:type="select" visible="true" source_model="Gog\ImageSlider\Model\Config\Source\Staticblock">
+				<label translate="true">Select CMS Static block 6</label>
+			</parameter>
+			<parameter name="html_6" xsi:type="conditions" visible="true" class="Gog\ImageSlider\Block\Adminhtml\Widget\Form\Field\WysiwygEditor">
+				<label translate="true">Content 6</label>
+			</parameter>
+			<parameter name="block_7" xsi:type="select" visible="true" source_model="Gog\ImageSlider\Model\Config\Source\Staticblock">
+				<label translate="true">Select CMS Static block 7</label>
+			</parameter>
+			<parameter name="html_7" xsi:type="conditions" visible="true" class="Gog\ImageSlider\Block\Adminhtml\Widget\Form\Field\WysiwygEditor">
+				<label translate="true">Content 7</label>
+			</parameter>
+			<parameter name="block_8" xsi:type="select" visible="true" source_model="Gog\ImageSlider\Model\Config\Source\Staticblock">
+				<label translate="true">Select CMS Static block 8</label>
+			</parameter>
+			<parameter name="html_8" xsi:type="conditions" visible="true" class="Gog\ImageSlider\Block\Adminhtml\Widget\Form\Field\WysiwygEditor">
+				<label translate="true">Content 8</label>
+			</parameter>
+			<parameter name="block_9" xsi:type="select" visible="true" source_model="Gog\ImageSlider\Model\Config\Source\Staticblock">
+				<label translate="true">Select CMS Static block 9</label>
+			</parameter>
+			<parameter name="html_9" xsi:type="conditions" visible="true" class="Gog\ImageSlider\Block\Adminhtml\Widget\Form\Field\WysiwygEditor">
+				<label translate="true">Content 9</label>
+			</parameter>
+			<parameter name="block_10" xsi:type="select" visible="true" source_model="Gog\ImageSlider\Model\Config\Source\Staticblock">
+				<label translate="true">Select CMS Static block 10</label>
+			</parameter>
+			<parameter name="html_10" xsi:type="conditions" visible="true" class="Gog\ImageSlider\Block\Adminhtml\Widget\Form\Field\WysiwygEditor">
+				<label translate="true">Content 10</label>
+			</parameter>
+			<parameter name="block_11" xsi:type="select" visible="true" source_model="Gog\ImageSlider\Model\Config\Source\Staticblock">
+				<label translate="true">Select CMS Static block 11</label>
+			</parameter>
+			<parameter name="html_11" xsi:type="conditions" visible="true" class="Gog\ImageSlider\Block\Adminhtml\Widget\Form\Field\WysiwygEditor">
+				<label translate="true">Content 11</label>
+			</parameter>
+			<parameter name="block_12" xsi:type="select" visible="true" source_model="Gog\ImageSlider\Model\Config\Source\Staticblock">
+				<label translate="true">Select CMS Static block 12</label>
+			</parameter>
+			<parameter name="html_12" xsi:type="conditions" visible="true" class="Gog\ImageSlider\Block\Adminhtml\Widget\Form\Field\WysiwygEditor">
+				<label translate="true">Content 12</label>
+			</parameter>
+			<parameter name="block_13" xsi:type="select" visible="true" source_model="Gog\ImageSlider\Model\Config\Source\Staticblock">
+				<label translate="true">Select CMS Static block 13</label>
+			</parameter>
+			<parameter name="html_13" xsi:type="conditions" visible="true" class="Gog\ImageSlider\Block\Adminhtml\Widget\Form\Field\WysiwygEditor">
+				<label translate="true">Content 13</label>
+			</parameter>
+			<parameter name="block_14" xsi:type="select" visible="true" source_model="Gog\ImageSlider\Model\Config\Source\Staticblock">
+				<label translate="true">Select CMS Static block 14</label>
+			</parameter>
+			<parameter name="html_14" xsi:type="conditions" visible="true" class="Gog\ImageSlider\Block\Adminhtml\Widget\Form\Field\WysiwygEditor">
+				<label translate="true">Content 14</label>
+			</parameter>
+			<parameter name="block_15" xsi:type="select" visible="true" source_model="Gog\ImageSlider\Model\Config\Source\Staticblock">
+				<label translate="true">Select CMS Static block 15</label>
+			</parameter>
+			<parameter name="html_15" xsi:type="conditions" visible="true" class="Gog\ImageSlider\Block\Adminhtml\Widget\Form\Field\WysiwygEditor">
+				<label translate="true">Content 15</label>
+			</parameter>
+			<parameter name="block_16" xsi:type="select" visible="true" source_model="Gog\ImageSlider\Model\Config\Source\Staticblock">
+				<label translate="true">Select CMS Static block 16</label>
+			</parameter>
+			<parameter name="html_16" xsi:type="conditions" visible="true" class="Gog\ImageSlider\Block\Adminhtml\Widget\Form\Field\WysiwygEditor">
+				<label translate="true">Content 16</label>
+			</parameter>
+
+		</parameters>
+	</widget>
+</widgets>
